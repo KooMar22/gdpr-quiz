@@ -2,6 +2,7 @@ import { useReducer, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import useQuizData from "../../hooks/useQuizData";
 import quizService from "../../services/quizService";
+import "../../styles/Quiz.css";
 
 const quizReducer = (state, action) => {
   switch (action.type) {
@@ -147,7 +148,7 @@ const Quiz = () => {
   if (loading) {
     return (
       <div className="quiz">
-        <h1>Učitavanje pitanja...</h1>
+        <h1 id="loading">Učitavanje pitanja...</h1>
       </div>
     );
   }
@@ -155,8 +156,8 @@ const Quiz = () => {
   if (error) {
     return (
       <div className="quiz">
-        <h1>Greška pri učitavanju kviza</h1>
-        <p>{error}</p>
+        <h1 id="error">Greška pri učitavanju kviza</h1>
+        <p id="error">{error}</p>
         <Link to="/" className="btn" id="home-btn">
           Natrag na početnu
         </Link>
@@ -166,7 +167,7 @@ const Quiz = () => {
 
   if (state.isFinished) {
     return (
-      <div className="quiz quiz-results">
+      <div className="quiz-results">
         <h1>Rezultati kviza</h1>
         <div className="score-container">
           <p className="score">
@@ -241,14 +242,14 @@ const Quiz = () => {
 
       <div className="quiz-navigation">
         {state.currentQuestionIndex > 0 && (
-          <button className="btn nav-btn" onClick={handlePreviousQuestion}>
+          <button className="btn" id="nav-btn" onClick={handlePreviousQuestion}>
             Prethodno
           </button>
         )}
 
         {!isLastQuestion ? (
           <button
-            className="btn nav-btn"
+            className="btn" id="nav-btn"
             onClick={handleNextQuestion}
             disabled={!selectedAnswerId}
           >
@@ -256,7 +257,7 @@ const Quiz = () => {
           </button>
         ) : (
           <button
-            className="btn finish-btn"
+            className="btn" id="finish-btn"
             onClick={handleFinishQuiz}
             disabled={!allQuestionsAnswered || state.saving}
           >

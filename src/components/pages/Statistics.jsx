@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import {PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend} from "recharts";
 import getStatistics from "../../services/statisticsService";
+import "../../styles/Statistics.css";
 
 const Statistics = () => {
   const [statistics, setStatistics] = useState({
@@ -16,7 +17,7 @@ const Statistics = () => {
         const data = await getStatistics();
         setStatistics({ loading: false, error: null, data });
       } catch (error) {
-        console.error("Error fetching statistics:", error);
+        console.error(`Error fetching statistics: ${error}`);
         setStatistics({
           loading: false,
           error: error.message || "Greška pri dohvaćanju statistike",

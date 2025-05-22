@@ -14,7 +14,7 @@ const useQuizData = () => {
         const data = await quizService.fetchQuizQuestions();
         setQuestions(data);
       } catch (err) {
-        console.error("Error in useQuizData:", err);
+        console.error(`Error in useQuizData: ${err}`);
         setError(err.message || "Došlo je do greške pri dohvaćanju pitanja");
         setQuestions([]);
       } finally {
