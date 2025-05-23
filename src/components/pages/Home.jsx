@@ -19,8 +19,8 @@ const Home = () => {
             bavi zaštitom osobnih podataka i tehnološki je entuzijast.
           </p>
           <p>
-            Za rješavanje kviza ne treba vam puno znanja već samo dobre volje i
-            malo zdrave logike i istraživanja.
+            Za rješavanje kviza ne treba vam puno znanja već samo malo dobre volje te
+            zdrave logike i istraživanja.
           </p>
           <p>Kliknite na gumb ispod da biste započeli kviz.</p>
           <Link to="/quiz" className="btn" id="start-btn">Započni kviz</Link>
