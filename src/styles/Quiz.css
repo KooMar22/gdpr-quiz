@@ -1,50 +1,54 @@
 .quiz {
-    width: 100%;
-    padding: 2rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #loading {
-    font-size: calc(0.5rem + 1vw);
-    color: rgb(0, 0, 0);
+  font-size: calc(0.5rem + 1vw);
+  color: rgb(0, 0, 0);
 }
 
 #error {
-    font-size: calc(0.5rem + 1vw);
-    color: rgb(255, 0, 0);
+  font-size: calc(0.5rem + 1vw);
+  color: rgb(255, 0, 0);
 }
 
 #home-btn {
-    font-size: calc(0.5rem + 1vw);
-    background-color: rgb(26, 126, 166);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+  background-color: rgb(26, 126, 166);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .quiz-results {
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .score-container {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
-  
+
 .score {
-    font-size: 1.5rem;
-    margin: 0;
+  font-size: calc(0.7rem + 1vw);
+  margin: 0;
 }
-  
+
 .score span {
-    font-weight: bold;
-    color: rgb(63, 167, 209);
-    font-size: 2rem;
+  font-weight: bold;
+  color: rgb(63, 167, 209);
+  font-size: 2rem;
 }
 
 .quiz-actions {
@@ -75,10 +79,10 @@
 .progress-bar {
   width: 100%;
   height: 0.5rem;
+  margin-top: 0.5rem;
   background-color: rgb(220, 220, 220);
   border-radius: 0.25rem;
   overflow: hidden;
-  margin-top: 0.5rem;
 }
 
 .progress-fill {
@@ -94,7 +98,6 @@
   padding: 1.5rem;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .answers-list {
@@ -122,6 +125,7 @@
   background-color: rgb(230, 240, 250);
   border-color: rgb(63, 167, 209);
   font-weight: bold;
+  font-style: oblique;
 }
 
 .quiz-navigation {
@@ -129,21 +133,20 @@
   justify-content: space-between;
   width: 80%;
   max-width: 600px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #nav-btn {
-  background-color: rgb(63, 167, 209);
+  background-color: rgb(26, 126, 166);
   color: rgb(255, 255, 255);
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 10px;
-  transition: background-color 0.2s ease;
 }
 
 #nav-btn:hover {
-  background-color: rgb(45, 150, 190);
+  background-color: rgb(12, 109, 148);
 }
 
 #nav-btn:disabled {
@@ -155,10 +158,9 @@
   background-color: rgb(76, 175, 80);
   color: rgb(255, 255, 255);
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: calc(0.8rem + 0.5vw);
   font-weight: bold;
   border-radius: 10px;
-  transition: background-color 0.2s ease;
 }
 
 #finish-btn:hover {

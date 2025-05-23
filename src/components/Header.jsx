@@ -7,13 +7,13 @@ const Header = () => {
       <nav className="navbar">
         <ul className="navbar-list">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Početna</Link>
           </li>
           <li>
-            <Link to="/quiz">Quiz</Link>
+            <Link to="/quiz">Kviz</Link>
           </li>
           <li>
-            <Link to="/statistics">Statistics</Link>
+            <Link to="/statistics">Statistika</Link>
           </li>
         </ul>
       </nav>

@@ -1,36 +1,35 @@
 .header {
-    min-height: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(63, 167, 209);
-    padding: 0 1rem;
-  }
+  min-height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(163, 7, 163);
+  padding: 0 1rem;
+}
 
 .title {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.2rem + 1vw);
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-style: oblique;
 }
-  
+
 .navbar-list {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1.2rem;
   margin: 0.5rem 0;
 }
-  
+
 .navbar-list li {
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
 }
-  
+
 .navbar-list li a {
   color: rgb(255, 255, 255);
+  font-size: calc(.7rem + 1vw);
   font-weight: bold;
 }
 
@@ -40,17 +39,18 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(240, 240, 240);
+  background: linear-gradient(to right, rgb(234, 141, 141), rgb(168, 144, 254));
   border-radius: 10px 10px 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 .footer {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgb(163, 7, 163);
   color: rgb(255, 255, 255);
 }
 
@@ -69,4 +69,11 @@
 .icon {
   width: 20px;
   height: auto;
+  padding: 0;
+}
+
+@media (orientation: portrait) {
+  .contact-icons {
+    margin-right: 7%;
+  }
 }
