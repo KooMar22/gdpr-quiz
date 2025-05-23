@@ -217,7 +217,7 @@
   }
 
   .quiz h1 {
-    font-size: calc(1.5rem + 3vw);
+    font-size: calc(1.9rem + 3vw);
     margin-bottom: 1.5rem;
   }
 
@@ -227,7 +227,7 @@
   }
 
   .quiz-progress p {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.4rem + 1vw);
     margin-bottom: 1rem;
   }
 
@@ -243,7 +243,7 @@
   }
 
   .question-container h2 {
-    font-size: calc(1.1rem + 2vw);
+    font-size: calc(1.5rem + 2vw);
     line-height: 1.3;
     margin-bottom: 2rem;
   }
@@ -256,7 +256,7 @@
   .answer-item {
     min-height: 60px;
     padding: 1.2rem;
-    font-size: calc(.9rem + 1.5vw);
+    font-size: calc(1.3rem + 1.5vw);
     line-height: 1.3;
   }
 
@@ -268,13 +268,12 @@
 
   #nav-btn, #finish-btn {
     padding: 1rem 1.5rem;
-    font-size: calc(.9rem + 1vw);
-    min-width: 140px;
-    border-radius: 12px;
+    font-size: calc(1.4rem + 1vw);
+    border-radius: 10px;
   }
 
   .quiz-results h1 {
-    font-size: calc(1.5rem + 3vw);
+    font-size: calc(1.9rem + 3vw);
     margin-bottom: 2rem;
   }
 
@@ -285,11 +284,11 @@
   }
 
   .score {
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1.5rem + 2vw);
   }
 
   .score span {
-    font-size: calc(1.5rem + 2.5vw);
+    font-size: calc(1.9rem + 2.5vw);
   }
 
   .quiz-actions {
@@ -301,6 +300,6 @@
   .quiz-actions .btn {
     width: 80%;
     padding: 1rem 2rem;
-    font-size: calc(.9rem + 1vw);
+    font-size: calc(1.4rem + 1vw);
   }
 }
