@@ -8,8 +8,9 @@
 }
 
 .overall-stats {
-  width: 80%;
+  width: 85%;
   max-width: 1200px;
+  text-align: center;
   margin: 1.5rem 0;
   padding: 1.5rem;
   background-color: rgb(255, 255, 255);
@@ -45,8 +46,13 @@
 }
 
 .questions-stats {
-  width: 90%;
+  width: 85%;
   max-width: 1200px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: rgb(248, 240, 240);
+  text-align: center;
+  border-radius: 10px;
 }
 
 .question-stat {

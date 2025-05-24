@@ -4,7 +4,8 @@ const getStatistics = async () => {
   try {
     const { data: questions, error: questionsError } = await supabase
       .from("questions")
-      .select("id, text");
+      .select("id, text")
+      .order("id", { ascending: true });
 
     if (questionsError) throw questionsError;
 

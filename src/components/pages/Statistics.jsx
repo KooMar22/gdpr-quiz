@@ -133,13 +133,10 @@ const Statistics = () => {
                       cx="50%"
                       cy="50%"
                       labelLine={true}
-                      outerRadius={80}
+                      outerRadius={90}
                       fill="#8884d8"
                       dataKey="value"
                       nameKey="name"
-                      label={({ name, percent }) =>
-                        `${name}: ${(percent * 100).toFixed(0)}%`
-                      }
                     >
                       {questionData.answerDistribution.map(
                         (entry, entryIndex) => (

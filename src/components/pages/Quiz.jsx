@@ -241,15 +241,19 @@ const Quiz = () => {
       </div>
 
       <div className="quiz-navigation">
-        {state.currentQuestionIndex > 0 && (
-          <button className="btn" id="nav-btn" onClick={handlePreviousQuestion}>
-            Prethodno
-          </button>
-        )}
+        <button
+          className="btn nav-btn"
+          id="previous-btn"
+          onClick={handlePreviousQuestion}
+          disabled={state.currentQuestionIndex === 0}
+        >
+          Prethodno
+        </button>
 
         {!isLastQuestion ? (
           <button
-            className="btn" id="nav-btn"
+            className="btn nav-btn"
+            id="next-btn"
             onClick={handleNextQuestion}
             disabled={!selectedAnswerId}
           >
@@ -257,7 +261,8 @@ const Quiz = () => {
           </button>
         ) : (
           <button
-            className="btn" id="finish-btn"
+            className="btn"
+            id="finish-btn"
             onClick={handleFinishQuiz}
             disabled={!allQuestionsAnswered || state.saving}
           >
